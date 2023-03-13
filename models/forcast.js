@@ -1,19 +1,16 @@
-// const forecasts = [
-//   'Sunny with clear skies',
-//   'Mostly cloudy with scattered showers',
-//   'Partly cloudy with chance of thunderstorms',
-//   'Overcast with light rain',
-//   'Clear skies with gusty winds',
-//   'Snow flurries',
-//   'Heavy snowfall',
-//   'Hazy with high humidity',
-//   'Foggy with low visibility',
-//   'Freezing rain',
-//   'Sleet and freezing drizzle'
-// ];
-
-
-// console.log(forecasts)
+const forecasts = [
+  'Sunny with clear skies',
+  'Mostly cloudy with scattered showers',
+  'Partly cloudy with chance of thunderstorms',
+  'Overcast with light rain',
+  'Clear skies with gusty winds',
+  'Snow flurries',
+  'Heavy snowfall',
+  'Hazy with high humidity',
+  'Foggy with low visibility',
+  'Freezing rain',
+  'Sleet and freezing drizzle'
+];
 
 module.exports = [
 

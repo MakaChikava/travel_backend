@@ -102,4 +102,106 @@ const toiletries = [
           type: "Hygiene"
         }
       ];
+      const sunnyClothingGear = [{
+        type: "Sunglasses",
+        name: "Sunglasses",
+        weatherRating: "Sunny"
+      },
+      {
+        type: "Sun hat",
+        name: "Sun hat",
+        weatherRating: "Sunny"
+      },
+      {
+        type: "Sunscreen",
+        name: "Sunscreen",
+        weatherRating: "Sunny"
+      },
+      {
+        type: "Shorts",
+        name: "Shorts",
+        weatherRating: "Sunny"
+      },
+      {
+        type: "T-shirt",
+        name: "T-shirt",
+        weatherRating: "Sunny"
+      },
+      {
+        type: "Flip flops",
+        name: "Flip flops",
+        weatherRating: "Sunny"
+      }];
+      
+      const rainyClothingGear = [{
+        type: "Raincoat",
+        name: "Raincoat",
+        weatherRating: "Rainy (Light to Moderate)"
+      },
+      {
+        type: "Umbrella",
+        name: "Umbrella",
+        weatherRating: "Rainy (Light to Moderate)"
+      },
+      {
+        type: "Rain boots",
+        name: "Rain boots",
+        weatherRating: "Rainy (Light to Moderate)"
+      },
+      {
+        type: "Waterproof hat",
+        name: "Waterproof hat",
+        weatherRating: "Rainy (Light to Moderate)"
+      },
+      {
+        type: "Waterproof pants",
+        name: "Waterproof pants",
+        weatherRating: "Rainy (Light to Moderate)"
+      },
+      {
+        type: "Waterproof jacket",
+        name: "Waterproof jacket",
+        weatherRating: "Rainy (Light to Moderate)"
+      },
+      {
+        type: "Waterproof backpack",
+        name: "Waterproof backpack",
+        weatherRating: "Rainy (Light to Moderate)"
+      }];
+      
+      const roughRainyClothingGear = [{
+        type: "Raincoat",
+        name: "Raincoat",
+        weatherRating: "Rainy (Heavy)"
+      },
+      {
+        type: "Umbrella",
+        name: "Umbrella",
+        weatherRating: "Rainy (Heavy)"
+      },
+      {
+        type: "Rain boots",
+        name: "Rain boots",
+        weatherRating: "Rainy (Heavy)"
+      },
+      {
+        type: "Waterproof hat",
+        name: "Waterproof hat",
+        weatherRating: "Rainy (Heavy)"
+      },
+      {
+        type: "Waterproof pants",
+        name: "Waterproof pants",
+        weatherRating: "Rainy (Heavy)"
+      },
+      {
+        type: "Waterproof jacket",
+        name: "Waterproof jacket",
+        weatherRating: "Rainy (Heavy)"
+      },
+      {
+        type: "Waterproof backpack",
+        name: "Waterproof backpack",
+        weatherRating: "Rainy (Heavy)"
+      }];
       
