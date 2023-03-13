@@ -3,7 +3,7 @@ const app = express();
 const mongoose = require('mongoose');
 const cors = require('cors')
 require('dotenv').config()
-
+const Weather = require('./models/weatherSchema.js')
 const rominaURI = process.env.MONGODB
 //Controllers
 //models
