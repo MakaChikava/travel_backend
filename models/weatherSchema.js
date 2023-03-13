@@ -1,4 +1,4 @@
-const weatherSchema = {
+const Schema = {
     "type": "object",
     "properties": {
       "city": {
