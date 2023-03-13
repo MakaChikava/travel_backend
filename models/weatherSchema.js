@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 
 const weatherSchema = new mongoose.Schema[{
-    "type": "object",
-    "properties": {
-      "city": {
-        "type": "string",
-        "description": "The name of the city."
+    type: object,
+    properties: {
+      city: {
+        type: String,
+        description: String
       },
       state: {
         type: String,
