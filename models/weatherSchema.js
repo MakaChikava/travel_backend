@@ -1,4 +1,6 @@
-const Schema = {
+const mongoose = require('mongoose');
+
+const weatherSchema = new mongoose.Schema[{
     "type": "object",
     "properties": {
       "city": {
@@ -58,5 +60,8 @@ const Schema = {
         "description": "The time when the sun sets."
       }
     }
-  }
+  }]
   
+
+  const Weather = mongoose.model('Weather', weatherSchema);
+  module.exports= Weather;
