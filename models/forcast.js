@@ -94,3 +94,48 @@ const NYWeather = {
     sunrise: '7:30 AM',
     sunset: '7:30 PM'
   };
+
+  const CapeTownWeather = {
+    city: 'Cape Town',
+    country: 'South Africa',
+    temperature: {
+      high: 25,
+      low: 15,
+      get current() {
+        return Math.floor(Math.random() * (this.high - this.low + 1) + this.low);
+      }
+    },
+    humidity: 65,
+    wind: {
+      speed: 20,
+      direction: 'Southeast'
+    },
+    get forecast() {
+      return forecasts[Math.floor(Math.random() * forecasts.length)];
+    },
+    sunrise: '6:30 AM',
+    sunset: '7:00 PM'
+  };
+  
+  const SeattleWeather = {
+    city: 'Seattle',
+    state: 'Washington',
+    temperature: {
+      high: 12,
+      low: 6,
+      get current() {
+        return Math.floor(Math.random() * (this.high - this.low + 1) + this.low);
+      }
+    },
+    humidity: 80,
+    wind: {
+      speed: 15,
+      direction: 'West'
+    },
+    get forecast() {
+      return forecasts[Math.floor(Math.random() * forecasts.length)];
+    },
+    sunrise: '7:00 AM',
+    sunset: '6:00 PM'
+  };
+  
