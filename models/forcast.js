@@ -15,8 +15,9 @@
 
 // console.log(forecasts)
 
-module.exports = [{
-LAWeather : {
+module.exports = [
+
+{
   city: 'Los Angeles',
   state: 'California',
   temperature: {
@@ -36,7 +37,7 @@ LAWeather : {
   sunset: '6:30 PM'
 },
 
-SFWeather : {
+{
   city: 'San Francisco',
   state: 'California',
   temperature: {
@@ -58,7 +59,7 @@ SFWeather : {
   sunset: '7:00 PM'
 },
 
-NYWeather : {
+{
     city: 'New York',
     state: 'New York',
     temperature: {
@@ -80,7 +81,7 @@ NYWeather : {
     sunset: '6:30 PM'
   },
   
-  ParisWeather : {
+  {
     city: 'Paris',
     country: 'France',
     temperature: {
@@ -102,7 +103,7 @@ NYWeather : {
     sunset: '7:30 PM'
   },
 
-  CapeTownWeather : {
+  {
     city: 'Cape Town',
     country: 'South Africa',
     temperature: {
@@ -124,7 +125,7 @@ NYWeather : {
     sunset: '7:00 PM'
   },
   
-  SeattleWeather = {
+  {
     city: 'Seattle',
     state: 'Washington',
     temperature: {
@@ -146,4 +147,4 @@ NYWeather : {
     sunset: '6:00 PM'
   }
 
-}]
+]
