@@ -1,63 +1,63 @@
 const mongoose = require('mongoose');
 
 const weatherSchema = new mongoose.Schema[{
-    "type": "object",
-    "properties": {
-      "city": {
-        "type": "string",
-        "description": "The name of the city."
+    type: object,
+    properties: {
+      city: {
+        type: String,
+        description: String
       },
-      "state": {
-        "type": "string",
-        "description": "The name of the state."
+      state: {
+        type: String,
+        description: String
       },
-      "temperature": {
-        "type": "object",
-        "properties": {
-          "high": {
-            "type": "number",
-            "description": "The high temperature in Fahrenheit."
+      temperature: {
+        type: object,
+        properties: {
+          high: {
+            type: Number,
+            description: String
           },
-          "low": {
-            "type": "number",
-            "description": "The low temperature in Fahrenheit."
+          low: {
+            type: Number,
+            description: String
           },
-          "current": {
-            "type": "integer",
-            "description": "A random current temperature between high and low temperatures.",
-            "readOnly": true
+          current: {
+            type: Number,
+            description: String,
+            readOnly: {type: Boolean, default: true}
           }
         }
       },
-      "humidity": {
-        "type": "number",
-        "description": "The humidity in percentage."
+      humidity: {
+        type: Number,
+        description: String
       },
-      "wind": {
-        "type": "object",
-        "properties": {
-          "speed": {
-            "type": "number",
-            "description": "The wind speed in miles per hour."
+      wind: {
+        type: object,
+        properties: {
+          speed: {
+            type: Number,
+            description: String
           },
-          "direction": {
-            "type": "string",
-            "description": "The wind direction."
+          direction: {
+            type: String,
+            description: String
           }
         }
       },
-      "forecast": {
-        "type": "string",
-        "description": "A random forecast from an array of possible options.",
-        "readOnly": true
+      forecast: {
+        type: String,
+        description: String,
+        readOnly: {type: Boolean, default: true}
       },
-      "sunrise": {
-        "type": "string",
-        "description": "The time when the sun rises."
+      sunrise: {
+        type: String,
+        description: String
       },
-      "sunset": {
-        "type": "string",
-        "description": "The time when the sun sets."
+      sunset: {
+        type: String,
+        description: String
       }
     }
   }]

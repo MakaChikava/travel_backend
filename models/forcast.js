@@ -12,11 +12,12 @@
 //   'Sleet and freezing drizzle'
 // ];
 
-  
+
 // console.log(forecasts)
 
+module.exports = [
 
-const LAWeather = {
+{
   city: 'Los Angeles',
   state: 'California',
   temperature: {
@@ -34,9 +35,9 @@ const LAWeather = {
   },
   sunrise: '6:30 AM',
   sunset: '6:30 PM'
-};
+},
 
-const SFWeather = {
+{
   city: 'San Francisco',
   state: 'California',
   temperature: {
@@ -56,9 +57,9 @@ const SFWeather = {
   },
   sunrise: '7:00 AM',
   sunset: '7:00 PM'
-};
+},
 
-const NYWeather = {
+{
     city: 'New York',
     state: 'New York',
     temperature: {
@@ -78,9 +79,9 @@ const NYWeather = {
     },
     sunrise: '6:30 AM',
     sunset: '6:30 PM'
-  };
+  },
   
-  const ParisWeather = {
+  {
     city: 'Paris',
     country: 'France',
     temperature: {
@@ -100,9 +101,9 @@ const NYWeather = {
     },
     sunrise: '7:30 AM',
     sunset: '7:30 PM'
-  };
+  },
 
-  const CapeTownWeather = {
+  {
     city: 'Cape Town',
     country: 'South Africa',
     temperature: {
@@ -122,9 +123,9 @@ const NYWeather = {
     },
     sunrise: '6:30 AM',
     sunset: '7:00 PM'
-  };
+  },
   
-  const SeattleWeather = {
+  {
     city: 'Seattle',
     state: 'Washington',
     temperature: {
@@ -144,5 +145,6 @@ const NYWeather = {
     },
     sunrise: '7:00 AM',
     sunset: '6:00 PM'
-  };
-  
+  }
+
+]
