@@ -18,6 +18,14 @@ app.use(express.json());
 app.use(cors());
 
 //ROUTES
+
+//SEED
+// app.post('/location', async (req,res) => {
+//     const seededItems = await Item.create(packingData);
+//     res.json(seededItems)
+//     console.log(seededItems)
+// })
+
 //CREATE
 app.post('/location', async (req,res) => {
     const createdItem = await Item.create(req.body)
@@ -40,11 +48,6 @@ app.put('/location/:id', async (req, res)=>{
     res.json(updatedItem);
 })
 
-//SEED
-app.post('/location/seed', async (req,res) => {
-    const seededItems = await Item.create(packingData);
-    res.json(seededItems)
-})
 
 mongoose.connect(rominaURI)
 mongoose.connection.once('open', ()=>{
