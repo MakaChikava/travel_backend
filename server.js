@@ -3,7 +3,6 @@ const app = express();
 const mongoose = require('mongoose');
 const cors = require('cors')
 require('dotenv').config()
-const Weather = require('./models/weatherSchema.js')
 const packingData = require('./models/packingList.js')
 
 
@@ -11,7 +10,8 @@ const rominaURI = process.env.MONGODB
 //Controllers
 
 //models
-const Item = require('./models/packingListSchema.js')
+// const Weather = require('./models/weatherSchema.js')
+const Item = require('./models/packingSchema.js')
 
 //middleware
 app.use(express.json());
@@ -21,7 +21,7 @@ app.use(cors());
 //CREATE
 app.post('/location', async (req,res) => {
     const createdItem = await Item.create(req.body)
-    res.json(createdLocation)
+    res.json(createdItem)
 });
 //INDEX
 app.get('/location', async(req,res) => {
