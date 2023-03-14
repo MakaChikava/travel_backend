@@ -19,13 +19,6 @@ app.use(cors());
 
 //ROUTES
 
-//SEED
-// app.post('/location', async (req,res) => {
-//     const seededItems = await Item.create(packingData);
-//     res.json(seededItems)
-//     console.log(seededItems)
-// })
-
 //CREATE
 app.post('/location', async (req,res) => {
     const createdItem = await Item.create(req.body)
