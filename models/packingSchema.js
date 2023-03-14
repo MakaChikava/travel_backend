@@ -1,15 +1,52 @@
 const mongoose = require('mongoose')
 
+const packingListSchema = new mongoose.Schema ({
+  coldList:{
+              top:[String], bottoms:[String],
+              shoes:[String],
+              headgear: [String],
+              accessories: [String]
+          },
 
-const packingListSchema = new mongoose.Schema ([{
+  sunnyList:{
+                  top:[String],
+                  bottoms:[String],
+                  shoes:[String],
+                  headgear: [String],
+                  accessories: [String]
+          },
 
-      type: { type: String },
-      name: { type: String },
-      weatherRating: { type: String }
+  rainyList:{
+              top:[String], 
+              bottoms:[String],
+              shoes:[String],
+              headgear: [String],
+              accessories: [String]
+          },
 
-    }
+  hardRainList:{
+                  top:[String], 
+                  bottoms:[String],
+                  shoes:[String],
+                  headgear: [String],
+                  accessories: [String]
+              }
+});
 
-  ]);
+const Item = mongoose.model('Item', packingListSchema);
+module.exports= Item;
+
+
+
+// const packingListSchema = new mongoose.Schema ([{
+
+//       type: { type: String },
+//       name: { type: String },
+//       weatherRating: { type: String }
+
+//     }
+
+//   ]);
   
-  const Item = mongoose.model('Item', packingListSchema);
-  module.exports= Item;
+//   const Item = mongoose.model('Item', packingListSchema);
+//   module.exports= Item;
