@@ -1,5 +1,23 @@
 const mongoose = require('mongoose');
 
+const weatherSchema = new mongoose.Schema({
+  image: String,
+  state: String,
+  city: String,
+  temperature: String,
+  humidity: String,
+  wind: String,
+  sunrise: String,
+  sunset: String,
+});
+
+  const Weather = mongoose.model('Weather', weatherSchema);
+  module.exports= Weather;
+
+
+
+
+
 // const weatherSchema = new mongoose.Schema ([{
     
 //     location: {
@@ -55,6 +73,3 @@ const mongoose = require('mongoose');
 //       }
 //     }
 //   }])
-
-  const Weather = mongoose.model('Weather', weatherSchema);
-  module.exports= Weather;
