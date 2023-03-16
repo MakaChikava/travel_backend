@@ -4,15 +4,12 @@ const mongoose = require('mongoose');
 const cors = require('cors')
 require('dotenv').config()
 const packingData = require('./models/packingList.js')
-
-
 const rominaURI = process.env.MONGODB
-//Controllers
 
 //models
-// const Weather = require('./models/weatherSchema.js')
 const Item = require('./models/packingSchema.js')
 const List = require('./models/createList.js')
+
 //middleware
 app.use(express.json());
 app.use(cors());

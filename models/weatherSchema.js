@@ -59,15 +59,6 @@ const weatherSchema = new mongoose.Schema ([{
   module.exports= Weather;
 
 
-// const weatherSchema = new mongoose.Schema({
-//   image: String,
-//   state: String,
-//   city: String,
-//   temperature: String,
-//   humidity: String,
-//   wind: String,
-//   sunrise: String,
-//   sunset: String,
-// });
+
 
 
